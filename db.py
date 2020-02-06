@@ -1,14 +1,22 @@
 import sqlite3
+import datetime
+import random
+
+x = datetime.datetime.now()
+
 conn = sqlite3.connect('sqlite.db')
 
 c = conn.cursor()
 
 lp_numb = "ka09724ghsa"
-loc=['bit','market','krpuram']
-ldat="23-2-49"
-ltme="5:23pm"
+loc_li=['bit','market','krpuram']
 
 
+loc = random.choice(loc_li)
+
+dt = datetime.datetime.now()
+ltme = str(dt.strftime("%X"))
+ldat = str(dt.strftime("%x"))
 
 
 #cursor.execute("INSERT INTO table VALUES var1, var2, var3,") 
@@ -22,7 +30,6 @@ conn.commit()
 
 for row in c.execute('SELECT * FROM lplogs'):
     print (row)
-
 
 # We can also close the connection if we are done with it.
 # Just be sure any changes have been committed or they will be lost.
