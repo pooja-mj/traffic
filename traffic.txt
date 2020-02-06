@@ -1,0 +1,14 @@
+traffic police asssistance
+
+traffic signal > breaks the law    					>>> IOT decvice with a camara
+license plate is logged								
+infomation is stored in the databaser				
+notification is sent to the police					>>> web server
+
+UI 	> admin sign in
+	> traffic cop login
+		> who broke the law
+			> location road, vehicle, license plate
+		> license plate > find the driver details
+		> cop and the driver will get the notification
+		> issue close/open 
